@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 2</title>
+    <link rel="stylesheet" href="style2.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" 
+    integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw=="
+     crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    
+<input type="checkbox" id="toggle">
+    <nav class="navbar">
+        <div class="navleft">
+           <label for="toggle" class="more"><i class="fa-solid fa-bars"></i></label>
+            <label for="dots" class="dots"><i class="fa-solid fa-ellipsis-vertical"></i></label>
+            <h2 class="logo">Dashboard</h2>
+        </div>
+        <div class="navright">
+            <div class="search">
+                <i class="fa-solid fa-magnifying-glass"></i>
+                <input type="text" placeholder="Search">
+            </div>
+            <img class="pimg" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="profile">
+        </div>
+    </nav>
+
+<div class="container">
+        <aside class="sidebar">
+            <ul>
+                <li class="active"><i class="fa-solid fa-house"></i> Dashboard</li>
+                <li><i class="fa-solid fa-chart-line"></i> Analytics</li>
+                <li><i class="fa-solid fa-envelope"></i> Messages</li>
+                <li><i class="fa-solid fa-gear"></i> Settings</li>
+            </ul>
+        </aside>
+
+    <main class="content">
+        <section class="grid">
+            <div class="card">
+                <i class="fa-solid fa-cart-shopping icon-blue"></i>
+                    <div class="info">
+                        <h3>$7,500</h3>
+                        <p>Total Sales</p>
+                    </div>
+            </div>
+            <div class="card">
+                <i class="fa-solid fa-users icon-green"></i>
+                <div class="info">
+                    <h3>1,250</h3>
+                    <p>New Users</p>
+                </div>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-box icon-orange"></i>
+                <div class="info">
+                    <h3>3,200</h3>
+                    <p>Total Orders</p>
+                </div>
+                </div>
+                <div class="card">
+                    <i class="fa-solid fa-ticket icon-red"></i>
+                <div class="info">
+                    <h3>50</h3>
+                    <p>Support Tickets</p>
+                </div>
+                </div>
+        </section>
+
+        <section class="table">
+            <h3>Recent Transactions</h3>
+            <div class="tablewrap">
+                <table>
+                    <thead>
+                    <tr>
+                    <th>Order ID</th>
+                    <th>Customer</th>
+                    <th>Status</th>
+                    <th>Total</th>
+                    </tr>
+                    </thead>
+                    <tbody>
+                    <tr><td>#10001</td><td>John Doe</td><td><span class="status paid">Paid</span></td><td>$110.00</td></tr>
+                    <tr><td>#10002</td><td>Janet Smith</td><td><span class="status pending">Pending</span></td><td>$65.00</td></tr>
+                    <tr><td>#10003</td><td>Miller Johnson</td><td><span class="status paid">Paid</span></td><td>$75.00</td></tr>
+                    </tbody>
+                </table>
+
+                <footer class="footer">
+                  <div class="fot">
+                   <a href="" class="pagelink disabled">Previous</a>
+                   <span class="pagenumber active">1</span>
+                   <a href="" class="pagelink">Next<i class="arrow-down"></i></a>
+                  </div>
+                </footer>
+            </div>
+        </section>
+    </main>
+    </div>    
+</body>
+</html>

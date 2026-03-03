@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style3.css">
+</head>
+<body class="bg-light">
+
+    <nav class="navbar navbar-expand-lg navbar-white bg-white shadow-sm sticky-top py-2">
+<div class="container-fluid px-2 px-md-4 d-flex flex-nowrap align-items-center justify-content-between">
+    
+    <div class="navleft d-flex align-items-center flex-shrink-0">
+        <label for="toggle" class="more me-3 d-lg-none"><i class="fa-solid fa-bars"></i></label>
+        <h2 class="logo mb-0 fs-5 text-nowrap">Dashboard</h2>
+    </div>
+
+    <div class="search-container flex-grow-1 mx-2 mx-md-5" style="max-width: 400px;">
+        <div class="search d-flex align-items-center bg-light px-3 py-1 rounded-pill">
+            <i class="fa-solid fa-magnifying-glass text-muted"></i>
+            <input type="text" class="form-control bg-transparent border-0 shadow-none ps-2" 
+                   placeholder="Search" style="font-size: 14px; min-width: 50px;">
+        </div>
+    </div>
+
+    <div class="navright flex-shrink-0">
+        <img class="pimg rounded-circle border" src="https://cdn.pixabay.com/photo/2015/10/05/22/37/blank-profile-picture-973460_1280.png" alt="profile" width="35" height="35">
+    </div>
+</div>
+    </nav>
+
+    <input type="checkbox" id="toggle" class="d-none">
+
+    <div class="container-fluid p-0 d-flex main-wrapper">
+        <aside class="sidebar bg-dark text-white shadow">
+            <ul class="nav flex-column py-2">
+   <li class="nav-item">
+                 <a href="" class="nav-link active text-white px-4 py-3 bg-primary bg-opacity-10 border-start border-4 border-primary">
+<i class="fa-solid fa-house me-3"></i> Dashboard
+</a>
+</li>
+<li class="nav-item"><a href="" class="nav-link text-white-50 px-4 py-3"><i class="fa-solid fa-chart-line me-3"></i> Analytics</a></li>
+<li class="nav-item"><a href="" class="nav-link text-white-50 px-4 py-3"><i class="fa-solid fa-envelope me-3"></i> Messages</a></li>
+<li class="nav-item"><a href="" class="nav-link text-white-50 px-4 py-3"><i class="fa-solid fa-gear me-3"></i> Settings</a></li>
+</ul>
+</aside>
+
+<main class="content flex-grow-1 p-3 p-md-4">
+            <div class="row g-3 g-md-4 mb-4">
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm p-3 h-100">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="p-3 bg-primary bg-opacity-10 rounded-3">
+                                <i class="fa-solid fa-cart-shopping fs-4 text-primary"></i>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold mb-0">$7,500</h4>
+                                <small class="text-muted">Total Sales</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm p-3 h-100">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="p-3 bg-success bg-opacity-10 rounded-3">
+                                <i class="fa-solid fa-users fs-4 text-success"></i>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold mb-0">1,250</h4>
+                                <small class="text-muted">New Users</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                    <div class="card border-0 shadow-sm p-3 h-100">
+                        <div class="d-flex align-items-center gap-3">
+                            <div class="p-3 bg-warning bg-opacity-10 rounded-3">
+                                <i class="fa-solid fa-box fs-4 text-warning"></i>
+                            </div>
+                            <div>
+                                <h4 class="fw-bold mb-0">3,200</h4>
+                                <small class="text-muted">Total Orders</small>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card border-0 shadow-sm overflow-hidden">
+                <div class="card-header bg-white py-3 border-0">
+                    <h5 class="mb-0 fw-bold">Recent Transactions</h5>
+                </div>
+                <div class="table-responsive">
+                    <table class="table table-hover align-middle mb-0">
+                        <thead class="table-light">
+                            <tr class="small text-uppercase text-muted">
+                                <th class="ps-4">Order ID</th>
+                                <th>Customer</th>
+                                <th>Status</th>
+                                <th class="pe-4">Total</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="ps-4">#10001</td>
+                                <td class="fw-medium">John Doe</td>
+                                <td><span class="badge rounded-pill bg-success-subtle text-success">Paid</span></td>
+                                <td class="pe-4 fw-bold">$110.00</td>
+                            </tr>
+                            <tr>
+                                <td class="ps-4">#10002</td>
+                                <td class="fw-medium">Janet Smith</td>
+                                <td><span class="badge rounded-pill bg-warning-subtle text-warning">Pending</span></td>
+                                <td class="pe-4 fw-bold">$65.00</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+<footer class="d-flex justify-content-center py-4 border-top bg-white">
+    <div class="pagination-ui d-flex align-items-center gap-3">
+      <a href="" class="text-muted text-decoration-none small opacity-50 pe-none">Previous</a>
+        <span class="border rounded px-3 py-1 bg-white small fw-medium">1</span>
+         <a href="" class="text-muted text-decoration-none small fw-medium">Next <i class="fa-solid fa-chevron-down ms-1" style="font-size: 0.7rem;"></i></a>
+        </div>
+</footer>
+</div>
+</main>
+</div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
