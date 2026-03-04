@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    line-height: 1.6;
+    color: #333;
+    overflow-x: hidden; 
+}
+
+.head {
+    background-color: #060b1e; /
+}
+
+.navbar {
+    padding: 1.5rem;
+    text-align: center;
+}
+
+.logo {
+    color: #ff5a5f;
+    font-size: 1.1rem;
+    letter-spacing: 1px;
+}
+
+.nav-links {
+    list-style: none;
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column; 
+    gap: 15px;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: #eaeaea;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+}
+
+
+.hero {
+    padding: 60px 20px 20px;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+    font-weight: 800;
+}
+
+.herop {
+    color: #666;
+    margin-top: 10px;
+}
+
+
+.main-con {
+    padding-bottom: 60px;
+}
+
+.form-con {
+    text-align: center;
+    padding: 20px;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.form-label {
+    display: block;
+    font-size: 10px;
+    font-weight: bold;
+    margin-bottom: 8px;
+    letter-spacing: 1px;
+    text-align: left;
+}
+
+.form-select {
+    width: 100%; 
+    padding: 15px;
+    border: 1px solid #ccc;
+    background-color: #fff;
+    font-size: 1rem;
+    border-radius: 0;
+}
+
+.form-link {
+    margin-top: 40px;
+    font-weight: bold;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.foot {
+    background-color: #f1e1cb;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.foot h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.foot a {
+    text-decoration: none;
+    color: #333;
+    font-size: 14px;
+}
+
+.footer {
+    background: #060b1e;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media (min-width: 993px) {
+    .navbar {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        text-align: left;
+        padding: 1.2rem 8%;
+    }
+
+    .nav-links {
+        flex-direction: row; 
+        margin-top: 0;
+        gap: 25px;
+    }
+
+    .hero h1 {
+        font-size: 3.5rem;
+    }
+
+    .form-con {
+        padding: 40px 0;
+    }
+}
